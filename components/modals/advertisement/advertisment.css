@@ -1,0 +1,8 @@
+.apply-border{
+    border: 2px dotted red;
+}
+/* @media(max-width:450px) {
+    .mobile-responsive{
+        display:none
+    }
+} */

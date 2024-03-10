@@ -1,0 +1,59 @@
+.footer-container {
+    display: grid;
+    grid-template-rows: auto auto; 
+  }
+  .newsletter-box {
+    background-color: #A0A9B3;
+    line-height: 1.15;
+  }
+  .font-3{
+    font-size: 2.5rem;
+    line-height: 1.20;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  .column {
+    padding: 30px;
+    justify-items: center;
+    align-content: center;
+    /* text-align: center; */
+  }
+  .links-row{
+    background-color: #31373C;
+      text-align: left;
+      color: aqua;
+      display: flex;
+      justify-content: center;
+  }
+  .license {
+    background-color: #31373C;
+  }
+  
+  .row:nth-child(2) {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+  /* For smaller screen */
+  @media screen and (max-width: 768px) {
+    .font-3 {
+      font-size: 1.3rem;
+      line-height: 1.1;
+    }
+    .row {
+      display: block;
+    }
+    .column{
+      padding: 15px;
+    }
+
+    
+    .row:nth-child(2) {
+      display: block;
+    }
+  }
+
+
+  
