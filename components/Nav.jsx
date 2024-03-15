@@ -128,27 +128,10 @@ const Navbar = () => {
             className=" hover:opacity-80 rounded-lg text-black-2 text-base p-2.5 me-1"
           >
             
-            Categories
+            
             
           </Link>
-          <div className="relative">
-            <form onSubmit={handleSearchSubmit}>
-              <input
-                type="text"
-                id="search-navbar-desktop"
-                className="p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-              />
-              <button
-                type="submit"
-                className=" absolute inset-y-0 right-0 px-3 py-2 text-sm bg-body text-white rounded-r-lg"
-              >
-                {">"}
-              </button>
-            </form>
-          </div>
+          
         </div>
 
         {/* Small Screen Layout */}

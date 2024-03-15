@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Loader from "@/components/common/Loader";
 import { categoriesWithProdCount } from "@/services/categoryService";
-import SearchComponent from "@/components/SerachBar";
+
 import PaginatedItems from "@/components/pagination/Pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencilAlt, faArrowsRotate, faTrash, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -117,7 +117,7 @@ const CategoriesPage = () => {
           >
             Add Category
           </Link>
-          <SearchComponent setSearchParams={setSearchParams} searchParams={searchParams} />
+          
           
         </div>
         {allCategories.length > 0 ? (<div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
