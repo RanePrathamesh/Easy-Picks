@@ -249,45 +249,7 @@ export const scrapeSingleProduct = async (link, page) => {
                 }
             }
 
-            //       const variantElement = document.querySelector("#twister");
-            //       let variants = [];
-            //       if (variantElement) {
-            //         const variantGroupsDivs = variantElement.querySelectorAll(
-            //           "div.a-spacing-small"
-            //         );
-
-            //         for (const variantGroupDiv of variantGroupsDivs) {
-            //           const variantLabelElement =
-            //             variantGroupDiv.querySelector("label.a-form-label");
-            //           const label = variantLabelElement
-            //             ? variantLabelElement.textContent?.trim()
-            //             : "";
-
-            //           const variantItems = variantGroupDiv.querySelectorAll(
-            //             "ul.a-button-list li[data-csa-c-type='item']"
-            //           );
-
-            //           for (const variantItem of variantItems) {
-            //             const variantInfo = extractVariantInfo(variantItem, label);
-
-            //             console.log(variantInfo.variantImageSrc, " - issue");
-            //             if (variantInfo.variantImageSrc) {
-            //               const absoluteImageSrc = new URL(
-            //                 variantInfo.variantImageSrc
-            //               ).href;
-
-            //               // const imgs = await saveImageToLocal(
-            //               //   absoluteImageSrc,
-            //               //   `variant_${variantInfo.variantImageAlt || "image"}.png`,
-            //               //   folderPath
-            //               // );
-            //               // variantInfo.variantImageSrc = imgs.pngImagePath
-            //             }
-
-            //             variants.push(variantInfo);
-            //           }
-            //         }
-            //       }
+            
 
             const timesBoughtElement = document.querySelector(".social-proofing-faceout");
             let soldInPastMonth;
