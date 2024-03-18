@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en">
         <body>
-          <Nav />
+          <Nav/>
             <main className="app bg-meta-2">{children}</main>
           
         </body>

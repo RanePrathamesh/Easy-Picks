@@ -2,6 +2,7 @@ import Catalogue from "@/components/Catalogue";
 import Collect from "@/components/collects/Collect";
 import Link from "next/link";
 
+
 export const metadata = {
   title: "Best Reviewed Products",
   description: "Discover the top 10 bestselling products from Amazon's extensive catalog. Find the latest deals and compare prices for the best value.",
@@ -23,9 +24,14 @@ return (
       </h1>
       <p className=" text-center my-3 italic ">"Grab your deal today!"</p>
       <div className="text-center mt-4">
+      
+
         <Link href="/admin/categories">
-          Start Searching
+          <button className="button">Get Started</button>
         </Link>
+
+
+
       </div>
     </section>
   </>
