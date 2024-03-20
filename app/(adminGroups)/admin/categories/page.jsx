@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Loader from "@/components/common/Loader";
 import { categoriesWithProdCount } from "@/services/categoryService";
-import SearchComponent from "@/components/SerachBar";
+
 import PaginatedItems from "@/components/pagination/Pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencilAlt, faArrowsRotate, faTrash, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +14,7 @@ import { toast } from "react-toastify";
 import { GlobalRef } from "@/app/lib/globalRef";
 import Confirmation from "@/components/modals/confirmation/Confirmation";
 import axios from "axios";
+import Navbar from "@/components/Nav";
 
 
 const CategoriesPage = () => {
@@ -108,6 +109,7 @@ const CategoriesPage = () => {
 
   return (
     <div>
+      <Navbar/>
       
       <div className="flex flex-col gap-10">
         <div className="flex space-x-4">
@@ -117,7 +119,7 @@ const CategoriesPage = () => {
           >
             Add Category
           </Link>
-          <SearchComponent setSearchParams={setSearchParams} searchParams={searchParams} />
+          
           
         </div>
         {allCategories.length > 0 ? (<div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -170,13 +172,8 @@ const CategoriesPage = () => {
                   </p>
                 </div>
                 <div className="col-span-1 flex items-center space-x-3.5">
-                  <button
-                    className="hover:text-primary"
-                    title="Edit"
-                    onClick={() => handleEdit(category)}
-                  >
-                    <FontAwesomeIcon icon={faPencilAlt} size="sm" className="fill-current" />
-                  </button>
+                  
+                    
                   <button
                     className={`transition-all duration-200 hover:text-primary ${category.status === "running" && "text-success text-xl"}`}
                     title={category.status === "running" ? "running..." : "refresh-scraper"}
@@ -203,7 +200,9 @@ const CategoriesPage = () => {
         </div>) : (<h1>No category for this serach</h1>)}
         <PaginatedItems setPage={setPage} itemsPerPage={itemsPerPage} itemsCount={count} />
       </div>
+      
     </div>
+   
   );
 };
 
