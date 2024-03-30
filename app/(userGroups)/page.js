@@ -16,7 +16,7 @@ export default async function Home() {
       <Collect />
       <section className="w-full flex-center pt-2">
         <h1 className="font-bold text-xl text-center">
-          Best Products At Lowest Price<br />
+          hey!!! pick Best Products At Lowest Price<br />
           <span className="text-center">Amazon Products</span>
         </h1>
         <p className="text-center my-3 italic">"Grab your deal today!"</p>
