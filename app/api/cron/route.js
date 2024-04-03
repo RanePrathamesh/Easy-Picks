@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import Category from "@/models/category"
 import { CronJob } from 'cron';
 import { connectToDB } from "@/utils/db";
-import Cron from "@/models/cronTask";
+
 import { saveProductsOfXCategory } from "@/methods";
 import puppeteer from "puppeteer";
 import { ExtractProductLiknsAndExecute } from "@/app/lib/Scraper/scrapers";

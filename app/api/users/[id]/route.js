@@ -1,4 +1,4 @@
-import User from "@/models/user";
+
 import { connectToDB } from "@/utils/db";
 
 

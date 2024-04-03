@@ -8,7 +8,7 @@ import Loader from "@/components/common/Loader";
 import { toast } from "react-toastify";
 import { tosterProps } from "@/utils/generic-util";
 import { getCategories } from "@/services/categoryService";
-import SearchComponent from "@/components/SerachBar";
+
 import Select from 'react-select';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import PaginatedItems from "@/components/pagination/Pagination";
@@ -168,9 +168,7 @@ const Products = () => {
                         onChange={filterProductByCategory}
                     />
                 </div>
-                <div className="w-1/3">
-                    <SearchComponent searchParams={searchParams} setSearchParams={setSearchParams} />
-                </div>
+                
                 <div className="w-1/10">
                     <button className="border px-8 py-2 borde rounded-lg bg-primary bg-opacity-80 text-white" onClick={() => setShowModel(true)}>Add Product</button>
                 </div>
